@@ -1,0 +1,150 @@
+/* [project]/src/styles/UsersList.css [app-client] (css) */
+.users-list-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.list-header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.list-header h2 {
+  color: var(--text-primary);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.count {
+  color: var(--accent-primary);
+  background: #10b9811a;
+  border: 1px solid #10b9814d;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.users-grid {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  display: grid;
+}
+
+.user-card {
+  cursor: pointer;
+  background: #2d354880;
+  border: 1px solid #4755694d;
+  border-radius: 12px;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  transition: all .3s;
+  display: flex;
+}
+
+.user-card:hover {
+  border-color: var(--accent-primary);
+  background: #2d3548cc;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px #10b98126;
+}
+
+.user-icon {
+  background: #10b9811a;
+  border: 1px solid #10b98133;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: 32px;
+  display: flex;
+}
+
+.user-card h3 {
+  color: var(--text-primary);
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.user-card .email {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 13px;
+}
+
+.user-card .location {
+  color: var(--accent-primary);
+  margin: 0;
+  font-size: 13px;
+}
+
+.user-stats {
+  border-top: 1px solid #47556933;
+  border-bottom: 1px solid #47556933;
+  gap: 16px;
+  padding: 12px 0;
+  display: flex;
+}
+
+.stat {
+  flex-direction: column;
+  flex: 1;
+  gap: 4px;
+  display: flex;
+}
+
+.stat-value {
+  color: var(--accent-primary);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-size: 11px;
+}
+
+.view-button {
+  color: var(--accent-primary);
+  cursor: pointer;
+  background: #10b9811a;
+  border: 1px solid #10b9814d;
+  border-radius: 6px;
+  margin-top: auto;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.view-button:hover {
+  border-color: var(--accent-primary);
+  background: #10b98133;
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .users-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .list-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .list-header h2 {
+    font-size: 22px;
+  }
+}
+
+/*# sourceMappingURL=src_styles_UsersList_css_bad6b30c._.single.css.map*/

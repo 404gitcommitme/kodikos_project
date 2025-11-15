@@ -1,0 +1,192 @@
+/* [project]/src/styles/SensorChart.css [app-client] (css) */
+.sensor-card {
+  background: #2d354880;
+  border: 1px solid #4755694d;
+  border-radius: 12px;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  transition: all .3s;
+  display: flex;
+}
+
+.sensor-card:hover {
+  background: #2d3548cc;
+  border-color: #10b9814d;
+  box-shadow: 0 8px 24px #10b9811a;
+}
+
+.sensor-header {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  display: flex;
+}
+
+.sensor-title {
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.sensor-icon {
+  background: #10b9811a;
+  border: 1px solid #10b98133;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  display: flex;
+}
+
+.sensor-title h4 {
+  color: var(--text-primary);
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sensor-value {
+  align-items: baseline;
+  gap: 4px;
+  display: flex;
+}
+
+.sensor-value .value {
+  color: var(--accent-primary);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sensor-value .unit {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.sensor-stats {
+  background: #10b9810d;
+  border-radius: 8px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 12px;
+  display: grid;
+}
+
+.stat {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  display: flex;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-size: 11px;
+}
+
+.stat-value {
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.chart-container {
+  background: #10b98105;
+  border: 1px solid #10b9811a;
+  border-radius: 8px;
+  flex: 1;
+  align-items: flex-end;
+  gap: 4px;
+  min-height: 120px;
+  padding: 12px;
+  display: flex;
+}
+
+.mini-chart {
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 6px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.bar {
+  background: linear-gradient(180deg, var(--accent-primary) 0%, #10b98199 100%);
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  flex: 1;
+  min-height: 4px;
+  max-height: 100%;
+  transition: all .3s;
+  position: relative;
+}
+
+.bar:hover {
+  background: linear-gradient(180deg, #10b981 0%, var(--accent-primary) 100%);
+  filter: brightness(1.2);
+  box-shadow: 0 0 8px #10b98166;
+}
+
+.data-table {
+  width: 100%;
+}
+
+.data-table table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13px;
+}
+
+.data-table tbody tr {
+  border-top: 1px solid #47556933;
+  transition: background .2s;
+}
+
+.data-table tbody tr:hover {
+  background: #10b9810d;
+}
+
+.data-table td {
+  padding: 10px 8px;
+}
+
+.data-table .timestamp {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.data-table .value-cell {
+  text-align: right;
+  color: var(--accent-primary);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .sensor-header {
+    flex-direction: column;
+  }
+
+  .sensor-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-container {
+    min-height: 80px;
+  }
+
+  .data-table table {
+    font-size: 12px;
+  }
+
+  .data-table td {
+    padding: 8px 4px;
+  }
+}
+
+/*# sourceMappingURL=src_styles_SensorChart_css_bad6b30c._.single.css.map*/
