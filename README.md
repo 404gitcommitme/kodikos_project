@@ -23,5 +23,5 @@ Vous pouvez modifier l’adresse IP du backend directement dans le fichier `App.
 ```tsx
 // src/ App.tsx ligne 16 ---------------( const res = await fetch('http://192.168.15.125:8000/api/admin/hive-stats/', { cache: 'no-store' });
 )
-const BACKEND_URL = "http://192.168.15.125:8000"; 
+const res = await fetch('http://192.168.15.125:8000/api/admin/hive-stats/', { cache: 'no-store' }; 
 // Remplacez par l’adresse IP de votre serveur
